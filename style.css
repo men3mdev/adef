@@ -23,6 +23,7 @@ body {
 	padding: 0;
 	font-family: "Anek Tamil", sans-serif;
 	transition: all 0.5s ease-in-out;
+	position: relative;
 }
 * {
 	box-sizing: border-box;
@@ -240,13 +241,14 @@ header {
 	border: 0;
 	background-color: var(--primary-btn-bg);
 	color: var(--primary-btn-fg);
-	padding: 10px 16px;
-	border-top-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	padding: 20px 60px;
+	border-radius: 5px;
 	cursor: pointer;
 	transform: translateY(-1px);
 	box-shadow: 4px 11px 20px rgba(0, 0, 0, 0);
 	transition: all 0.5s ease-in-out;
+	font-size: 1.2rem;
+	text-transform: capitalize;
 }
 
 #workshops .workshops_btn button:hover,
@@ -328,4 +330,14 @@ footer > .copyright p {
 hr {
 	background-color: var(--primary-fg);
 	margin: 0;
+}
+#to-top {
+	width: 50px;
+	height: 50px;
+	border: 0;
+	background-color: var(--primary-btn-bg);
+	color: var(--primary-btn-fg);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
 }
