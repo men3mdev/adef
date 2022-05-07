@@ -1,0 +1,331 @@
+:root {
+	--primary-bg: #eee;
+	--primary-fg: #222;
+	--secondary-bg: #ddd;
+	--secondary-fg: #555;
+	--primary-btn-bg: #222;
+	--primary-btn-fg: #fff;
+	--secondary-btn-bg: #dd3134;
+	--secondary-btn-fg: #fff;
+}
+.dark-mode {
+	--primary-bg: #1e2129;
+	--primary-fg: #fff;
+	--secondary-bg: #1e2129;
+	--secondary-fg: #aaa;
+	--primary-btn-bg: #ddd;
+	--primary-btn-fg: #000;
+	--secondary-btn-bg: #780404;
+	--secondary-btn-fg: #ddd;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Anek Tamil", sans-serif;
+	transition: all 0.5s ease-in-out;
+}
+* {
+	box-sizing: border-box;
+}
+section {
+	padding: 30px 0;
+}
+.site-nav button {
+	background-color: var(--primary-btn-bg);
+	color: var(--primary-btn-fg);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	cursor: pointer;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.container::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+header {
+	overflow-x: hidden;
+}
+.nav-row {
+	width: 100vw;
+	display: flex;
+	margin: 0 auto;
+	background-color: var(--primary-bg);
+	color: var(--primary-fg);
+}
+.nav-row .site-logo {
+	width: 20%;
+	margin-left: 20px;
+}
+.nav-row .site-nav {
+	width: 80%;
+	padding-right: 20px;
+}
+.site-nav ul {
+	display: flex;
+	padding: 0 10px;
+	margin: 0;
+	list-style: none;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+}
+.site-nav ul li:last-of-type {
+	margin: auto 20px;
+}
+.site-nav ul a {
+	text-decoration: none;
+	color: var(--primary-fg);
+	padding: 20px;
+	transition: all 0.5s ease-in-out;
+}
+.site-nav ul li:hover a {
+	background-color: var(--primary-btn-bg);
+	color: var(--primary-btn-fg);
+}
+.site-hero {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+	color: #fff;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background: linear-gradient(
+			to right,
+			rgba(33, 22, 22, 0.9),
+			rgba(0, 0, 0, 0.9)
+		),
+		url("https://image.isu.pub/180130124759-b3fd270b85b5044066792d735743d99c/jpg/page_1.jpg");
+	width: 100%;
+	height: calc(100vh - 57px);
+	background-size: cover;
+}
+.site-hero h1 {
+	font-weight: 400;
+	text-align: center;
+	font-size: 3rem;
+	letter-spacing: 4px;
+}
+.site-hero a {
+	font-weight: 400;
+	text-align: center;
+	font-size: 1.5rem;
+	letter-spacing: 4px;
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+	border-radius: 40px;
+	border: 1px solid #fff;
+	padding: 10px 50px;
+}
+#about {
+	background-color: var(--primary-bg);
+	color: var(--primary-fg);
+}
+#about .right-col {
+	width: 33%;
+	float: right;
+}
+
+#about .left-col {
+	width: 66%;
+	float: left;
+}
+#about .left-col img {
+	float: left;
+}
+#spaces {
+	background: var(--secondary-bg);
+	color: var(--secondary-fg);
+}
+#spaces h2 {
+	text-align: center;
+	padding: 40px 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+#spaces .flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+#spaces .flex .text-item {
+	width: 70%;
+	padding: 0 30px;
+}
+#spaces .flex .img-item {
+	width: 30%;
+}
+#spaces .flex .img-item img {
+	width: 100%;
+}
+
+#spaces .flex div:not(:last-of-type) {
+	margin-bottom: 10px;
+}
+
+#spaces .flex div:nth-of-type(1) {
+	order: 1;
+}
+#spaces .flex div:nth-of-type(2) {
+	order: 2;
+}
+#spaces .flex div:nth-of-type(3) {
+	order: 4;
+}
+#spaces .flex div:nth-of-type(4) {
+	order: 3;
+	padding-left: 0;
+}
+#spaces .flex div:nth-of-type(5) {
+	order: 5;
+}
+#spaces .flex div:nth-of-type(6) {
+	order: 6;
+}
+
+/* workshops */
+
+#workshops {
+	background-color: var(--primary-bg);
+	color: var(--primary-fg);
+}
+#workshops h2 {
+	text-align: center;
+	padding: 20px 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+#workshops .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#workshops .workshops_item {
+	width: 31%;
+	background-color: var(--primary-bg);
+	color: var(--secondary-fg);
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 4px 11px 20px #5e5e5e2e;
+	padding: 0;
+}
+#workshops .workshops_item img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+#workshops .workshops_item .workshops_content {
+	padding: 16px 10px;
+}
+
+#workshops .workshops_btn {
+	margin-top: 32px;
+	text-align: center;
+}
+
+#workshops .workshops_btn button {
+	border: 0;
+	background-color: var(--primary-btn-bg);
+	color: var(--primary-btn-fg);
+	padding: 10px 16px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+	transform: translateY(-1px);
+	box-shadow: 4px 11px 20px rgba(0, 0, 0, 0);
+	transition: all 0.5s ease-in-out;
+}
+
+#workshops .workshops_btn button:hover,
+#workshops .workshops_btn button:focus,
+#workshops .workshops_btn button:active {
+	transform: translateY(1px);
+	box-shadow: 0px 10px 11px var(--primary-btn-bg);
+}
+
+footer {
+	background-color: var(--primary-bg);
+}
+footer .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer section:last-of-type {
+	padding: 10px 0;
+}
+footer .row > div {
+	width: 32%;
+	color: var(--primary-fg);
+}
+
+footer .row > div > h3 {
+	text-align: center;
+	padding: 20px 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+footer .row > div > iframe {
+	width: 100%;
+}
+footer .row > div > div > ul {
+	list-style-type: square;
+}
+footer .row > div form {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	height: 32px;
+}
+
+footer .row > div form input {
+	padding: 10px;
+	outline: 0;
+	border: 0;
+	background-color: var(--primary-fg);
+	opacity: 0.7;
+}
+
+footer .row > div form button {
+	border: 0;
+	color: #555;
+	background-color: #ddd;
+	transition: all 0.5s ease-in-out;
+}
+
+footer .row > div form button:hover {
+	background-color: #555;
+	color: #ddd;
+}
+
+footer > .copyright {
+	text-align: center;
+	background-color: var(--primary-bg);
+	color: var(--secondary-fg);
+}
+footer > .copyright p {
+	margin: 0;
+	padding: 20px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+hr {
+	background-color: var(--primary-fg);
+	margin: 0;
+}
