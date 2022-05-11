@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	height: 100vh;
+	background-color: #76b852;
+	font-family: sans-serif;
+}
+
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: fit-content;
+	transform: translate(-50%, -50%);
+	padding: 32px;
+	background-color: #fff;
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem;
+	border: 0;
+	outline: none;
+	background-color: #f2f2f2;
+	padding: 20px;
+	font-size: 18px;
+}
+.form > input:last-of-type {
+	background-color: #4caf50;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: lighter;
+}
+
+.link_signup {
+	text-align: center;
+	color: #e3e3e3;
+}
+
+.link_signup a {
+	color: #4caf50;
+	text-decoration: none;
+	transition: all 300ms ease-in-out;
+}
+
+.link_signup a:hover {
+	color: #76b852;
+}
+.form-control {
+	position: relative;
+}
+.material-symbols-outlined {
+	position: absolute;
+	right: 10px;
+	color: #4caf50;
+	bottom: 17px;
+    cursor: pointer;
+}
